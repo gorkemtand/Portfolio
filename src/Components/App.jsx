@@ -6,7 +6,7 @@ import Contact from "./Contact";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
 
 
 

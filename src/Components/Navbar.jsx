@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [showNav, setShowNav] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleScroll = (sectionId) => {

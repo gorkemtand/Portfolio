@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios";
 import swal from "sweetalert";
 
-function ContactForm({ displayNotification }) {
+function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
