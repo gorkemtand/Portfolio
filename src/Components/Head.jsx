@@ -97,7 +97,7 @@ const generateLogosWithUniquePositions = () => {
       </div>
       <div className="greetings">
         <div className="image-container">
-          <img className="outlined-image" src={meImage}/>
+          <img className="outlined-image" src={meImage} alt=""/>
         </div>
         <h1>
           <span className="greetingsHello">Hello</span>, I'm{" "}

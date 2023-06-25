@@ -16,13 +16,13 @@ function Card(props) {
         <button className="codeButton">
         <a href={props.codeLink} target="_blank" rel="noopener noreferrer">
           <span className="buttonText">Code</span>   
-          <img src={GithubLogo}></img>  
+          <img src={GithubLogo} alt=""></img>  
         </a>
         </button>
         <button className="liveButton">
           <a href={props.liveLink} target="_blank" rel="noopener noreferrer">
           <span className="buttonText">Live Link</span>   
-          <img src={LinkIcon}></img>
+          <img src={LinkIcon} alt=""></img>
           </a>
         </button>
       </div>
