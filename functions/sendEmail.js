@@ -1,6 +1,7 @@
 const sgMail = require('@sendgrid/mail');
 
 exports.handler = async (event, context) => {
+  console.log("Executing email.js");
   try {
     const { name, email, message } = JSON.parse(event.body);
 
@@ -17,7 +18,8 @@ exports.handler = async (event, context) => {
 
     // Send the email
     await sgMail.send(msg);
-
+    console.log(process.env.SENDGRID_API_KEY);
+    console.log(process.env.CONTACT_EMAIL);
     return {
       statusCode: 200,
       body: 'Email sent successfully',
