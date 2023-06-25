@@ -17,7 +17,7 @@ function ContactForm() {
     e.preventDefault();
   
     try {
-      const response = await fetch("/contact", {
+      const response = await fetch("/.netlify/functions/sendEmail", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
