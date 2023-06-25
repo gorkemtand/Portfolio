@@ -22,7 +22,7 @@ exports.handler = async (event, context) => {
     console.log(process.env.CONTACT_EMAIL);
     return {
       statusCode: 200,
-      body: 'Email sent successfully',
+      body: JSON.stringify({message: 'Email sent successfully'}),
     };
   } catch (error) {
     console.log('Error sending email:', error);
