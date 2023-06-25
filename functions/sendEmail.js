@@ -11,7 +11,7 @@ exports.handler = async (event, context) => {
     // Compose the email
     const msg = {
       to: process.env.CONTACT_EMAIL, // Replace with your email address
-      from: email,
+      from: process.env.CONTACT_EMAIL,
       subject: subject,
       text: `Name: ${name}\nSubject: ${subject}\nEmail: ${email}\n\nMessage: ${message}`,
     };
