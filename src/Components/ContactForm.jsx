@@ -47,7 +47,7 @@ function ContactForm() {
   
 
   return (
-    <form method="POST" className="contactForm" onSubmit={handleSubmit}>
+    <form name="contact" action="/contact" method="POST" className="contactForm" onSubmit={handleSubmit}>
     <input type="hidden" name="form-name" value="contact" />
       <div className="formDiv">
         <label htmlFor="name">Name:</label>
