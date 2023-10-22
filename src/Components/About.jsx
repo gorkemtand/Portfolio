@@ -1,21 +1,27 @@
-import React from "react";
-import computerImage from "../images/about/computerImage.jpg";
-import htmlImage from "../images/about/html-colored.png";
-import cssImage from "../images/about/css-colored.png";
-import jsImage from "../images/about/javascript-colored.png";
-import reactImage from "../images/about/react-colored.png";
+import React, {useEffect} from "react";
+import ScrollReveal from "scrollreveal";
+
 
 function About() {
+  useEffect(() => {
+    // Initialize ScrollReveal
+    ScrollReveal().reveal('.aboutImage', { delay: 200, origin: 'left', distance: '50px' });
+    ScrollReveal().reveal('.descriptionAbout, .aboutTech', { delay: 200, origin: 'right', distance: '50px' });
+    ScrollReveal().reveal('.techImage', { delay: 200, interval: 150, origin: 'bottom', distance: '30px' });
+  }, []);
   return (
-    <div className="abouWrapper">
+    <div className="aboutWrapper">
+    <div className="about-image-desc">
+      <div className="imageWrapper">
       <div className="aboutImage">
-        <img className="aboutComputerImage" src={computerImage} alt="computerImg"/>
+      <img className="aboutProfileImage" src="https://storage.googleapis.com/gorkemtandogan-images/profilePic.png" alt="profileImg"/>
+      </div>
       </div>
       <div className="descriptionAbout">
         <h1>ABOUT ME</h1>
         <p>
           Hello, I'm Görkem Tandoğan, a front-end developer specializing in
-          HTML, CSS, JavaScript, and React. Welcome to my portfolio website!
+          HTML, CSS, JavaScript, React and NextJS. Welcome to my portfolio website!
         </p>
         <p>
           I bring a team-oriented mindset to every project, valuing effective
@@ -47,13 +53,15 @@ function About() {
           possibilities that lie ahead!
         </p>
       </div>
+      </div>
       <div className="aboutTech">
         <h1>Tech Stack |</h1>
         <div className="aboutTechImages">
-          <img className="techImage" src={htmlImage} alt="htmlImage" />
-          <img className="techImage" src={cssImage} alt="cssImage" />
-          <img className="techImage" src={jsImage} alt="jsImage" />
-          <img className="techImage" src={reactImage} alt="reactImage" />
+          <img className="techImage" src="https://storage.googleapis.com/gorkemtandogan-images/html-colored.png" alt="htmlImage" />
+          <img className="techImage" src="https://storage.googleapis.com/gorkemtandogan-images/css-colored.png" alt="cssImage" />
+          <img className="techImage" src="https://storage.googleapis.com/gorkemtandogan-images/javascript-colored.png" alt="jsImage" />
+          <img className="techImage" src="https://storage.googleapis.com/gorkemtandogan-images/react-colored.png" alt="reactImage" />
+          <img className="techImage" src="https://storage.googleapis.com/gorkemtandogan-images/nextjs-colored.png" alt="nextjsImage" />
         </div>
       </div>
     </div>

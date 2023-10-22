@@ -1,109 +1,56 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-import htmlLogo from "../images/head/html.png";
-import reactLogo from "../images/head/react.png";
-import cssLogo from "../images/head/css.png";
-import expresLogo from "../images/head/expresjs.png";
-import javascriptLogo from "../images/head/javascript.png";
-import nodeLogo from "../images/head/nodejs.png";
-import meImage from "../images/head/Gorkem.png";
 
 function Head() {
-  const [maxX, setMaxX] = useState(0);
-  const [maxY, setMaxY] = useState(0);
-
-  useEffect(() => {
-    const headElement = document.getElementById("head");
-    const { width, height } = headElement.getBoundingClientRect();
-    setMaxX(width);
-    setMaxY(height);
-  
-    const handleResize = () => {
-      const { width, height } = headElement.getBoundingClientRect();
-      setMaxX(width);
-      setMaxY(height);
-    };
-  
-    window.addEventListener("resize", handleResize);
-  
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  // Generate a random position for each logo
-  const generateRandomPosition = () => {
-    const min = 0;
-    const randomX = Math.floor(Math.random() * (maxX - min - 120)) + min;
-    const randomY = Math.floor(Math.random() * (maxY - min - 50)) + min;
-    return { x: randomX, y: randomY };
-  };
-
-  // Generate logos with unique positions
-const generateLogosWithUniquePositions = () => {
-  const uniqueLogos = [];
-  logos.forEach((logo) => {
-    Array.from({ length: 8 }).forEach(() => {
-      const position = generateRandomPosition();
-      const isOverlap = uniqueLogos.some((uniqueLogo) => {
-        const distance = Math.sqrt(
-          Math.pow(uniqueLogo.position.x - position.x, 2) +
-          Math.pow(uniqueLogo.position.y - position.y, 2)
-        );
-        return distance < 100; // Adjust this threshold as needed to avoid overlap
-      });
-
-      if (!isOverlap) {
-        uniqueLogos.push({
-          src: logo.src,
-          position: position
-        });
-      }
-    });
-  });
-
-  return uniqueLogos;
-};
-
-  // Create an array of logos with unique positions
-  const logos = [
-    { src: htmlLogo },
-    { src: reactLogo },
-    { src: cssLogo },
-    { src: expresLogo },
-    { src: javascriptLogo },
-    { src: nodeLogo }
-  ];
-
-  const logosWithUniquePositions = generateLogosWithUniquePositions();
-
   return (
     <div className="head-container">
-      <div>
-        {logosWithUniquePositions.map((logo, index) => (
-          <img
-            className="logo-img"
-            key={index}
-            src={logo.src}
-            alt="Logo"
-            style={{
-              position: "absolute",
-              top: `${logo.position.y}px`,
-              left: `${logo.position.x}px`,
-              animation: "slide 30s infinite"
-            }}
-          />
-        ))}
-      </div>
       <div className="greetings">
-        <div className="image-container">
-          <img className="outlined-image" src={meImage} alt=""/>
+        <div className="greetings-sentence">Hi,</div>
+        <div className="greetings-sentence">I'm</div>
+        <div className="greetings-sentence">Görkem</div>
+        <div className="greetings-sentence">|</div>
+        <div className="greetings-sentence highlighted">
+          Web<div className="greetings-effect"></div>
         </div>
-        <h1>
-          <span className="greetingsHello">Hello</span>, I'm{" "}
-          <span className="glowingText">Gorkem Tandogan</span> . I'm a web
-          developer
-        </h1>
+        <div className="greetings-sentence highlighted">
+          Developer<div className="greetings-effect"></div>
+        </div>
+      </div>
+      <div className="social-buttons">
+        <a
+          href="https://github.com/gorkemtand"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Github"
+        >
+          <img src="https://storage.googleapis.com/gorkemtandogan-images/github-colored.png" alt=""></img>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/gorkem-tandogan-5408a5183/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Linkedin"
+        >
+          <img src="https://storage.googleapis.com/gorkemtandogan-images/linkedin-colored.png" alt=""></img>
+        </a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&to=tandogangorkem@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Gmail"
+        >
+          <img src="https://storage.googleapis.com/gorkemtandogan-images/email-colored.png" alt=""></img>
+        </a>
+      </div>
+      <div className="head-description">
+        <p>
+          Passionate Frontend Developer dedicated to crafting immersive and
+          visually stunning web experiences.<br></br> With a keen eye for design
+          and a commitment to seamless user interactions, I bring creativity and
+          technical expertise to every project.<br></br> Explore my portfolio to
+          witness a blend of innovation, clean code, and a deep love for
+          bringing ideas to life in the digital realm.
+        </p>
       </div>
     </div>
   );

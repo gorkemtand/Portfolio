@@ -6,10 +6,7 @@ import Contact from "./Contact";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-import { BrowserRouter as Router} from "react-router-dom";
-
-
-
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
@@ -35,3 +32,15 @@ function App() {
 }
 
 export default App;
+/*
+ <section id="about">
+          <About />
+        </section>
+        <section id="projects">
+          <Projects />
+        </section>
+        
+          <section id="contact">
+          <Contact />
+        </section>
+        */
