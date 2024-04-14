@@ -79,28 +79,28 @@ function About() {
         <div className="aboutTechImages">
           <img
             className="techImage"
-            src="https://storage.googleapis.com/gorkemtandogan-images/html-colored.png"
-            alt="htmlImage"
-          />
-          <img
-            className="techImage"
-            src="https://storage.googleapis.com/gorkemtandogan-images/css-colored.png"
-            alt="cssImage"
-          />
-          <img
-            className="techImage"
-            src="https://storage.googleapis.com/gorkemtandogan-images/javascript-colored.png"
-            alt="jsImage"
-          />
-          <img
-            className="techImage"
-            src="https://storage.googleapis.com/gorkemtandogan-images/react-colored.png"
+            src="/images/react-colored.png"
             alt="reactImage"
           />
           <img
             className="techImage"
-            src="https://storage.googleapis.com/gorkemtandogan-images/nextjs-colored.png"
+            src="/images/nextjs-colored.png"
             alt="nextjsImage"
+          />
+          <img
+            className="techImage"
+            src="/images/javascript-colored.png"
+            alt="jsImage"
+          />
+          <img
+            className="techImage"
+            src="/images/html-colored.png"
+            alt="htmlImage"
+          />
+          <img
+            className="techImage"
+            src="/images/css-colored.png"
+            alt="cssImage"
           />
         </div>
       </div>
