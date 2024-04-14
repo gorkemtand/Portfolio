@@ -44,7 +44,7 @@ function Head() {
       </div>
       <div className="head-description">
         <p>
-          Passionate Front-end Developer dedicated to crafting immersive and
+          Passionate Front-End Developer dedicated to crafting immersive and
           visually stunning web experiences.<br></br> With a keen eye for design
           and a commitment to seamless user interactions, I bring creativity and
           technical expertise to every project.<br></br> Explore my portfolio to
