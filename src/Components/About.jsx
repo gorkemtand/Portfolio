@@ -79,27 +79,27 @@ function About() {
         <div className="aboutTechImages">
           <img
             className="techImage"
-            src="/images/react-colored.png"
+            src="/images/tech/react-colored.png"
             alt="reactImage"
           />
           <img
             className="techImage"
-            src="/images/nextjs-colored.png"
+            src="/images/tech/nextjs-colored.png"
             alt="nextjsImage"
           />
           <img
             className="techImage"
-            src="/images/javascript-colored.png"
+            src="/images/tech/javascript-colored.png"
             alt="jsImage"
           />
           <img
             className="techImage"
-            src="/images/html-colored.png"
+            src="/images/tech/html-colored.png"
             alt="htmlImage"
           />
           <img
             className="techImage"
-            src="/images/css-colored.png"
+            src="/images/tech/css-colored.png"
             alt="cssImage"
           />
         </div>

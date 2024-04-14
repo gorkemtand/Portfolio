@@ -23,7 +23,7 @@ function Head() {
           rel="noreferrer"
           aria-label="Github"
         >
-          <img src="/images/github-colored.png" alt=""></img>
+          <img src="/images/tech/github-colored.png" alt=""></img>
         </a>
         <a
           href="https://www.linkedin.com/in/gorkem-tandogan-5408a5183/"
@@ -31,7 +31,7 @@ function Head() {
           rel="noreferrer"
           aria-label="Linkedin"
         >
-          <img src="/images/linkedin-colored.png" alt=""></img>
+          <img src="/images/tech/linkedin-colored.png" alt=""></img>
         </a>
         <a
           href="https://mail.google.com/mail/?view=cm&to=tandogangorkem@gmail.com"
@@ -39,7 +39,7 @@ function Head() {
           rel="noreferrer"
           aria-label="Gmail"
         >
-          <img src="/images/email-colored.png" alt=""></img>
+          <img src="/images/tech/email-colored.png" alt=""></img>
         </a>
       </div>
       <div className="head-description">
