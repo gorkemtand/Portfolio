@@ -23,7 +23,7 @@ function Head() {
           rel="noreferrer"
           aria-label="Github"
         >
-          <img src="https://storage.googleapis.com/gorkemtandogan-images/github-colored.png" alt=""></img>
+          <img src="/images/github-colored.png" alt=""></img>
         </a>
         <a
           href="https://www.linkedin.com/in/gorkem-tandogan-5408a5183/"
@@ -31,7 +31,7 @@ function Head() {
           rel="noreferrer"
           aria-label="Linkedin"
         >
-          <img src="https://storage.googleapis.com/gorkemtandogan-images/linkedin-colored.png" alt=""></img>
+          <img src="/images/linkedin-colored.png" alt=""></img>
         </a>
         <a
           href="https://mail.google.com/mail/?view=cm&to=tandogangorkem@gmail.com"
@@ -39,12 +39,12 @@ function Head() {
           rel="noreferrer"
           aria-label="Gmail"
         >
-          <img src="https://storage.googleapis.com/gorkemtandogan-images/email-colored.png" alt=""></img>
+          <img src="/images/email-colored.png" alt=""></img>
         </a>
       </div>
       <div className="head-description">
         <p>
-          Passionate Frontend Developer dedicated to crafting immersive and
+          Passionate Front-end Developer dedicated to crafting immersive and
           visually stunning web experiences.<br></br> With a keen eye for design
           and a commitment to seamless user interactions, I bring creativity and
           technical expertise to every project.<br></br> Explore my portfolio to
