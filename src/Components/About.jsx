@@ -28,7 +28,7 @@ function About() {
           <div className="aboutImage">
             <img
               className="aboutProfileImage"
-              src="https://storage.googleapis.com/gorkemtandogan-images/profilePic.png"
+              src="/images/profilePic.png"
               alt="profileImg"
             />
           </div>
@@ -45,9 +45,9 @@ function About() {
           <p>
             I bring a team-oriented mindset to every project, valuing effective
             collaboration and open communication. I believe that working
-            together leads to innovative solutions and successful outcomes. I am
-            a great team member and enjoy contributing my skills and expertise
-            to achieve shared goals.
+            together leads to innovative solutions and successful outcomes. With
+            a proven track record in assuming key roles within project teams, I
+            have contributed my skills and expertise to achieve shared goals.
           </p>
           <p>
             With strong communication skills, I thrive in client interactions,
@@ -57,9 +57,9 @@ function About() {
           </p>
           <p>
             As a fast learner, I am passionate about continuously expanding my
-            knowledge and skill set. Each project is an opportunity for me to
-            learn and apply new concepts, ensuring that I deliver exceptional
-            user experiences.
+            knowledge and skill set. Each project serves as an opportunity for
+            me to learn and apply new concepts, ensuring that I deliver
+            exceptional user experiences.
           </p>
           <p>
             Please take a moment to explore my portfolio, where you can find
