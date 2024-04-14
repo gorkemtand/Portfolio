@@ -1,13 +1,13 @@
 const projects = [
-    {
-      id: 1,
-      name: "Architect Portfolio",
-      imageUrl: "/images/projects/architect-portfolio-image.png",
-      description:
-        "Explore the world of architectural innovation through my portfolio. Immerse yourself in a collection of carefully crafted projects that reflect my passion for design. From concept to realization, witness the evolution of spaces that tell unique stories. Welcome to a visual journey of creativity.",
-      codeLink: "https://github.com/gorkemtand/Architect-Portfolio",
-      liveLink: "https://gorkemtand.github.io/Architect-Portfolio/"
-    },
+    // {
+    //   id: 1,
+    //   name: "Architect Portfolio",
+    //   imageUrl: "/images/projects/architect-portfolio-image.png",
+    //   description:
+    //     "Explore the world of architectural innovation through my portfolio. Immerse yourself in a collection of carefully crafted projects that reflect my passion for design. From concept to realization, witness the evolution of spaces that tell unique stories. Welcome to a visual journey of creativity.",
+    //   codeLink: "https://github.com/gorkemtand/Architect-Portfolio",
+    //   liveLink: "https://gorkemtand.github.io/Architect-Portfolio/"
+    // },
     {
       id: 2,
       name: "Stylish Login Register",
