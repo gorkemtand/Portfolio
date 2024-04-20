@@ -37,7 +37,7 @@ function About() {
           <h1>ABOUT ME</h1>
           <p>
             Hello, I'm Görkem Tandoğan, a Front-end Developer specializing in
-            React, Next.js, JavaScript, HTML, and CSS. Throughout my career,
+            React, Next.js, TypeScript, JavaScript, HTML, and CSS. Throughout my career,
             I've taken on significant responsibilities in various projects,
             playing pivotal roles in their success Welcome to my portfolio
             website!
@@ -86,6 +86,11 @@ function About() {
             className="techImage"
             src="/images/tech/nextjs-colored.png"
             alt="nextjsImage"
+          />
+          <img
+            className="techImage"
+            src="/images/tech/typescript-colored.png"
+            alt="jsImage"
           />
           <img
             className="techImage"
